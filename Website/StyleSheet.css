@@ -1,0 +1,264 @@
+/*CSS for all elements (default styling)*/
+*{
+    background-color: #3F4045;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Creates a scroll bar on all pages even if page isnt scrollable (Stops elements shifting left due to scrollbar on some pages)*/
+body{overflow-y: scroll;}
+
+
+/* styling for navigation bar container*/
+/*Set background colour and put navbar at the top of page*/
+.navbar{
+    list-style-type: none;
+    background-color: #355691;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    text-align: center;
+}
+
+/* CSS of individual list items in navigation bar*/
+.navbar li{
+    display: inline;
+    
+}
+
+/* CSS for links to pages in navigation bar */
+.navbar a{
+    display: inline-block;
+    font-size: larger;
+    color: white;
+    padding: 30px;
+    text-decoration: none;
+    background-color: #355691;
+    transition: 0.4s;
+    text-align: center;
+    
+}
+
+    
+/*Navigation bar hover, active tab and logo styling*/
+.navbar a:hover:not(.active){
+    background-color: #413F54;
+}
+
+.navbar li a.active{
+    background-color: #3F4045;
+}
+
+.navbar li img.logo{
+    background-color: #355691;
+    float: left;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+/* CSS for main box on home page */
+.homebox{
+    border: #5F5AA2 solid 5px;
+    padding: 10px;
+    background-color: #30292F;
+    border-radius: 30px;
+    width: 700px;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 20px;
+
+}
+
+/* CSS for contents of main box*/
+.boxcont{
+    background-color: #30292F;
+    text-align: center;
+}
+
+
+/* Homepage Register Now button styling */
+.button1{
+    background-color: #413F54;
+    border-radius: 10px;
+    outline: none;
+    padding: 20px 50px;
+    font-size: 20px;
+    border: none;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+/*CSS for button hover function*/
+.button1:hover{
+    background-color: #355691;
+}
+
+/*Div for button to allow it to be centered*/
+.buttondiv{
+    background-color: #30292F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* CSS for main homepage image */
+.homeimage{
+    display: inline;
+    border-radius: 30px;
+    border: #5F5AA2 solid 5px;
+    margin-left: 50px;
+    height: 440px;
+    margin-bottom: -18.5px;
+    
+}
+
+/*Styling for bottom boxes' container*/
+.bottombox{
+    border: #355691 solid 5px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: #30292F;
+    height: 480px;
+    display: flex;
+}
+
+
+/*Styling for 3 bottom call to action boxes*/
+.lowbox{
+    background-color: #5F5AA2;
+    border:#3F4045 solid 4px;
+    border-radius: 10px;
+    width: 450px;
+    height: 428px;
+    display: inline-block;
+    margin-left: 23px;
+    margin-top: 20px;
+    margin-bottom: -7px;
+    margin-right: 7px;
+    
+}
+
+/*Styling for Bottom box contents*/
+.bottomboxcont{
+    background-color: #5F5AA2;
+    text-align: center;
+    
+}
+
+/*Image styling for 3 images at bottom*/
+.bottomphoto{
+    height: 193px;
+    width: 450px;
+    border-radius: 12px;
+    
+}
+
+
+/*Form styling*/
+
+/*Styling for the box that surrounds form which also allows content to be centred*/
+.formcontainer{
+    background-color: #30292F;
+    border-radius: 30px;
+    border: #5F5AA2 solid 10px ;
+    width: 700px;
+    margin-left: 400px;
+    margin-right: 400px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Styling of input labels*/
+.form{
+    background-color: #30292F;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/*CSS for input fields*/
+.forminput{
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+/*Styling for the Schedule table*/
+.schedule{
+    font-size: x-large;
+    
+    
+}
+
+/*Styling for cells in Table*/
+.schedule td{
+    padding: 1px 10px;
+    border: 3px solid #5F5AA2;
+    background-color:#5F5AA2 ;
+}
+
+/*Styling for Header cells*/
+.schedule th{
+    padding: 1px 10px;
+    border: #355691 solid 3px;
+    background-color: #30292F;
+}
+
+/*Styling for speakers page*/
+
+
+.speakercontainer{
+    padding: 30px;
+}
+
+/*Styling for Box that contains speaker info*/
+.speakerbox{
+    border: #5F5AA2 solid 8px;
+    border-radius: 35px;
+    background-color: #355691;
+    height: 500px;
+    margin: 200px;
+    margin-top: 150px;
+
+}
+
+/*Styling for title of speaker box (names)*/
+.speakerhead{
+    text-align: center;
+    background-color: #355691;
+
+}
+
+/*CSS for content of speaker boxes*/
+.speakercont{
+    background-color: #355691;
+    display: inline-block;
+    font-size: 23px;
+    padding-left: 50px;
+    padding-top: 20px;
+    width: 50%;
+    
+}
+
+/*Image styling for photos of speakers*/
+.speakerimg{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: #3F4045 solid 5px;
+    margin-left: 70px;
+    margin-bottom: -20px;
+}

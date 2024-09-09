@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCon 2023 Register</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <script src="JavaScript.js"></script>
+</head>
+
+<body>
+    <!--Unordered list which makes navigation bar-->
+    <ul class="navbar">
+        <li><img src="TechConLogo.png" class="logo"></li>
+        <li><a href="Index.html">HOME</a></li>
+        <li><a href="Schedule.html">SCHEDULE</a></li>
+        <li><a href="Speakers.html">SPEAKERS</a></li>
+        <li><a class="active" href="Register.html">REGISTER</a></li>
+        <li><a href="Contact.html">CONTACT US</a></li>
+    </ul>
+
+    <br>
+    <br>
+    <br><br><br><br>
+
+    <!--Title for registration form-->
+    <h1 style="text-align: center;">Register Below to save your Spot</h1>
+    <br>
+    <br>
+    
+    <!--Form container-->
+    <div class="formcontainer">
+        <form class="form">
+            <br>
+            <!-- Full name input -->
+            <label for="fullname" class="form">Full Name *</label><br>
+            <input type="text" name="fullname" id="fullname" class="forminput" placeholder="(Letters only)"><br><br><br>
+            <!-- Email input -->
+            <label for="email" class="form">Email *</label><br>
+            <input type="text" name="email" id="email" class="forminput" placeholder="(Email@email.domain)"><br><br><br>
+            <!-- Phone input -->
+            <label for="phone" class="form">Mobile Number *</label><br>
+            <input type="text" name="phone" id="phone" class="forminput" placeholder="(01234567890)"><br><br><br>
+            <!-- Postcode input -->
+            <label for="postcode" class="form">Postcode *</label><br>
+            <input type="text" name="postcode" id="postcode" class="forminput" placeholder="AB123CD"><br><br><br>
+            <!-- gender input -->
+            <label for="gender" class="form">Gender</label><br>
+            <select name="gender" id="gender" class="forminput">
+                <option value="Select">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br><br><br>
+            <!-- age input -->
+            <label for="age" class="form">Age * <span style="font-size: small; background-color: #30292F;">(Under 18s must be supervised)</span></label><br>
+            <input type="text" name="age" id="age" class="forminput" placeholder="(Numbers only)"><br><br><br>
+            
+            <!--Submit button-->
+            <button type="button" class="button1" style="padding: 10px 20px; margin-left: 20px;" onclick="submitregform()">Submit</button>
+
+        </form>
+
+
+    </div>
+</body>
+
+</html>
